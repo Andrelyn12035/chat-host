@@ -11,7 +11,6 @@ socket.on('connection',function(io){
     console.log("se unio");
     io.on('nuevo mensaje',data=>{
         socket.emit('nuevo mensaje servidor', data);
-        console.log(data);
     });
 });
 
